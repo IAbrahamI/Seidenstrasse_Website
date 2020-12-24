@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {MapContainer, Marker, Popup, TileLayer} from "react-leaflet";
+import Navbar from "./components/sources/Navbar";
+import './components/css/App.css';
+import Footer from "./components/sources/Footer";
+import Map from "./components/sources/Map";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    return (
+      <div>
+        <Navbar/>
+        <Map/>
+        <br/>
+        <Footer/>
+      </div>
   );
 }
 
