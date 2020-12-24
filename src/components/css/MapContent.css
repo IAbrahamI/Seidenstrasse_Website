@@ -1,0 +1,11 @@
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.text-div{
+    position: absolute;
+    left: 5%;
+    right: 5%;
+}

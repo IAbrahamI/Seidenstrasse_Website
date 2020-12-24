@@ -6,6 +6,7 @@ class Map extends Component {
     render(){
         return (
             <div>
+                <h1>Map</h1>
                 <MapContainer className='map-container' center={[47.499882, 8.726160]} zoom={4} scrollWheelZoom={true}>
                     <TileLayer
                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -13,7 +14,7 @@ class Map extends Component {
                     />
                     <Marker position={[47.499882, 8.726160]}>
                         <Popup>
-                            A pretty CSS3 popup. <br /> Easily customizable.
+                            Winterthur ZH
                         </Popup>
                     </Marker>
                 </MapContainer>
