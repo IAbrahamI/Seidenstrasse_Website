@@ -1,8 +1,11 @@
 .leaflet-container{
-    z-index: 0;
+    z-index: -1;
     height: 75vh;
     width: 90vw;
     left: 5vw;
     bottom: 5vh;
     top: 5vh;
+}
+.map-div{
+    top: 100px;
 }

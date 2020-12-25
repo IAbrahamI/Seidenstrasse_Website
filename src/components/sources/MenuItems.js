@@ -1,20 +1,19 @@
 export const MenuItems = [
     {
         title: 'Home',
-        url: '#',
+        url: '/',
         cName: 'nav-links'
     },{
         title: 'Geschichte',
-        url: '#',
+        url: '/pages/Geschichte',
         cName: 'nav-links'
     },{
         title: 'Map',
-        url: '#',
+        url: '/pages/Map',
         cName: 'nav-links'
     },{
         title: 'Wirtschaft & Politik',
-        url: '#',
+        url: '/pages/WirtschaftUndPolitik',
         cName: 'nav-links'
     }
-
 ]

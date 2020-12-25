@@ -1,18 +1,22 @@
 import React from 'react';
-import {MapContainer, Marker, Popup, TileLayer} from "react-leaflet";
-import Navbar from "./components/sources/Navbar";
 import './components/css/App.css';
-import MapContent from "./components/sources/MapContent";
-import Map from "./components/sources/Map";
-
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import Home from "./pages/Home";
+import Map from "./pages/Map";
+import Geschichte from "./pages/Geschichte";
+import WirtschaftUndPolitik from "./pages/WirtschaftUndPolitik";
 function App() {
     return (
-      <div>
-        <Navbar/>
-        <Map/>
-        <br/>
-        <MapContent/>
-      </div>
+        <Router>
+            <div>
+                <Switch>
+                    <Route path="/" exact component={Home}/>
+                    <Route path="/pages/Map" component={Map}/>
+                    <Route path="/pages/Geschichte" component={Geschichte}/>
+                    <Route path="/pages/WirtschaftUndPolitik" component={WirtschaftUndPolitik}/>
+                </Switch>
+            </div>
+        </Router>
   );
 }
 
